@@ -1,0 +1,57 @@
+/* Base font size */
+html, body {
+    font-size: 16px;
+}
+
+/* Paragraph styling */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Address block */
+address {
+    text-align: center;
+}
+
+/* Website link styling */
+a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+/* Hover effect */
+a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Visited link (your choice of style) */
+a:visited {
+    color: #6A4C8C; /* A slightly different purple */
+}
+
+/* Special sentence styling */
+.sentence {
+    font-style: italic;
+}
+
+/* First paragraph indentation */
+.intro {
+    text-indent: 2em;
+}

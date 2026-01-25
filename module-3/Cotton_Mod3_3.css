@@ -1,0 +1,53 @@
+/* Center the h1 */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs */
+.left-box, .right-box {
+    width: 45%;
+    float: left;
+    margin-right: 2%;
+}
+
+/* Last div */
+.bottom-box {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* h3 weight */
+h3 {
+    font-weight: 500;
+}
+
+/* list weight */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Ordered list styling */
+.left-box h3,
+.left-box ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+/* Unordered list styling */
+.right-box h3,
+.right-box ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+/* Link hover underline */
+a:hover {
+    text-decoration: underline;
+}

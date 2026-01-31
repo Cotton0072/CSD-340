@@ -1,0 +1,44 @@
+/* Center the main heading */
+h1 {
+    text-align: center;
+    color: rgba(0, 80, 160, 0.9);
+}
+
+/* Center the titles above each image */
+h3 {
+    text-align: center;
+    color: rgba(120, 40, 0, 0.9);
+}
+
+/* Main gallery container spacing + grid */
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Center the figure content */
+figure {
+    text-align: center;
+}
+
+/* Style the captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 120, 60, 0.9);
+}
+
+/* Make images scale nicely */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Back link styling */
+.back-link {
+    text-align: right;
+    margin-top: 20px;
+}

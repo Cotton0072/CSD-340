@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        span {
+            font-weight: bold;
+            color: #444;
+        }
+        button {
+            margin: 5px 0;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+<p>
+    Some of my favorite movie moments are the ones with jets screaming across the sky,  
+    especially the scenes with the F‑14 Tomcat launching off a carrier deck. The mix  
+    of engine noise, radio chatter, and dramatic music makes everything feel larger  
+    than life, like the whole world is holding its breath for that one  
+    <span id="word1">______</span> takeoff.
+</p>
+
+<p>
+    Watching those scenes is a big part of why I enjoy building aircraft in Blender.  
+    Trying to model an F‑14 means paying attention to every curve, panel line, and  
+    moving part. It’s not always easy, but there’s something satisfying about  
+    tweaking the mesh, adjusting the lighting, and finally getting a render that  
+    looks <span id="word2">______</span> on screen.
+</p>
+
+<p>
+    Blender feels a bit like directing my own movie. I can set the camera angle,  
+    line up the shot, and imagine the jet roaring past just like in the films  
+    that got me hooked in the first place. Every new project teaches me something  
+    different, and each finished model feels like one more step toward creating  
+    the kind of <span id="word3">______</span> scenes I grew up loving and the  
+    <span id="word4">______</span> I want to build in the future.
+</p>
+
+<button onclick="fill1()">Reveal Word 1</button><br>
+<button onclick="fill2()">Reveal Word 2</button><br>
+<button onclick="fill3()">Reveal Word 3</button><br>
+<button onclick="fill4()">Reveal Word 4</button><br>
+
+<script>
+    let w1 = "perfect";
+    let w2 = "realistic";
+    let w3 = "cinematic";
+    let w4 = "projects";
+
+    function fill1() {
+        document.getElementById("word1").textContent = w1;
+    }
+    function fill2() {
+        document.getElementById("word2").textContent = w2;
+    }
+    function fill3() {
+        document.getElementById("word3").textContent = w3;
+    }
+    function fill4() {
+        document.getElementById("word4").textContent = w4;
+    }
+</script>
+
+</body>
+</html>

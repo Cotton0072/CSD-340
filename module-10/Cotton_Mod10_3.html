@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <link rel="stylesheet" href="Cotton_Mod10_3.css">
+</head>
+
+<body>
+
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <!-- Display Box -->
+    <div id="display-box" class="fade"></div>
+
+    <!-- Image Row -->
+    <div class="image-row">
+        <img src="images/jp2.webp" 
+             class="thumb" 
+             alt="Jurassic Park Cover"
+             onclick="changeImage('images/jp2.webp')">
+
+        <img src="images/jp.jpg" 
+             class="thumb" 
+             alt="Jurassic Park Alternate Cover"
+             onclick="changeImage('images/jp.jpg')">
+
+        <img src="images/doom.jpg" 
+             class="thumb" 
+             alt="Doom Book Cover"
+             onclick="changeImage('images/doom.jpg')">
+    </div>
+
+    <script>
+        function changeImage(imageFile) {
+            const box = document.getElementById("display-box");
+
+            box.style.backgroundImage = "url('" + imageFile + "')";
+
+            box.classList.remove("fade");
+            void box.offsetWidth;
+            box.classList.add("fade");
+        }
+    </script>
+
+</body>
+</html>

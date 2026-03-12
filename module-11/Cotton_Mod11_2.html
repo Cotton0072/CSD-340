@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Cotton_Mod11_2.css">
+</head>
+
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <label for="itemInput">Enter a task:</label><br>
+    <input type="text" id="itemInput" placeholder="Type something..."><br>
+
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="sortList()">Sort</button>
+
+    <h3>Things To Do:</h3>
+    <div id="todoList"></div>
+
+    <script>
+        let items = [];
+
+        function displayList() {
+            const listDiv = document.getElementById("todoList");
+            listDiv.innerHTML = "";
+
+            items.forEach((item, index) => {
+                listDiv.innerHTML += `${index + 1}. ${item}<br>`;
+            });
+        }
+
+        function addItem() {
+            const newItem = document.getElementById("itemInput").value.trim();
+
+            if (newItem === "") {
+                alert("Please enter something before adding.");
+                return;
+            }
+
+            items.push(newItem);
+            alert("Added: " + newItem);
+            displayList();
+            document.getElementById("itemInput").value = "";
+        }
+
+        function deleteLast() {
+            if (items.length === 0) {
+                alert("There is nothing to delete.");
+                return;
+            }
+
+            const removed = items.pop();
+            alert("Deleted: " + removed);
+            displayList();
+        }
+
+        function sortList() {
+            if (items.length === 0) {
+                alert("There is nothing to sort.");
+                return;
+            }
+
+            items.sort();
+            alert("The list has been sorted.");
+            displayList();
+        }
+    </script>
+
+</body>
+</html>
